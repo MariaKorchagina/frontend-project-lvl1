@@ -1,0 +1,7 @@
+{
+  "name": "@hexlet/frontend-project-lvl1",
+  "bin": {
+    "brain-games": "bin/brain-games.js"
+  },
+  "type": "module"
+}
