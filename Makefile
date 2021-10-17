@@ -7,5 +7,8 @@ publish:
 brain-games:
 	node bin/brain-games.js
 
-lint:
+linter:
 	npx eslint 
+
+
+
