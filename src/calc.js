@@ -31,14 +31,12 @@ const generateAnswerCalc = () => {
     }
     if (answer == expectedResult) {
       console.log('Correct!');
-      if (i == 2) {
-        console.log(`Congratulations,${name}`);
-      }
     } else {
       console.log(`${answer} is wrong answer ;(. Correct answer was ${expectedResult}.`);
       console.log(`Let's try again, ${name}!`);
       return;
     }
   }
+  console.log(`Congratulations,${name}`);
 };
 export default generateAnswerCalc;
