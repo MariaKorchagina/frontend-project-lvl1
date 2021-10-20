@@ -7,7 +7,7 @@ const generateAnswer = () => {
   console.log(`Hello, ${name}!`);
   const round = 3;
   for (let i = 0; i < round; i += 1) {
-    const randomNumber = Math.floor(Math.random() * 100000);
+    const randomNumber = Math.floor(Math.random() * 100);
     console.log(`Question: ${randomNumber} `);
     const answer = readlineSync.question('Answer "yes" if the number is even, otherwise answer "no".');
     console.log(`Your answer: ${answer}`);
