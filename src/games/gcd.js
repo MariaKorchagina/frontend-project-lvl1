@@ -17,13 +17,16 @@ const biggestDivisor = () => {
     const answer = readlineSync.question('Find the greatest common divisor of given numbers.');
     console.log(`Your answer: ${answer}`);
     const expectedResult = NOD(randomNumber1, randomNumber2);
-    if (answer !== expectedResult) {
+    if (answer == expectedResult) {
+      console.log('Correct!');
+      if (i === 2) {
+        console.log(`Congratulations, ${name}!`);
+      }
+    } else {
       console.log(`${answer} is wrong answer ;(. Correct answer was ${expectedResult}.`);
       console.log(`Let's try again, ${name}!`);
       return;
     }
   }
-  console.log('Correct!');
-  console.log(`Congratulations,${name}`);
 };
 export default biggestDivisor;
