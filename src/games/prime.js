@@ -27,7 +27,7 @@ const getPrimeNumber = () => {
         }
       } else {
         console.log(`${answer} is wrong answer ;(. Correct answer was 'yes'.`);
-        console.log(`Let's try again,${name}!`);
+        console.log(`Let's try again, ${name}!`);
         return;
       }
     }
@@ -39,7 +39,7 @@ const getPrimeNumber = () => {
         }
       } else {
         console.log(`${answer} is wrong answer ;(. Correct answer was 'no'.`);
-        console.log(`Let's try again,${name}!`);
+        console.log(`Let's try again, ${name}!`);
         return;
       }
     }
