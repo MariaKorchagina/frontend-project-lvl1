@@ -36,6 +36,6 @@ const generateAnswerCalc = () => {
       return;
     }
   }
-  console.log(`Congratulations,${name}`);
+  console.log(`Congratulations, ${name}`);
 };
 export default generateAnswerCalc;
