@@ -32,9 +32,11 @@ const guessRandomNumber = () => {
     const randomLenght = Math.floor(getRandomArbitrary(5, 11));
     const hiddenNumber = Math.floor(getRandomArbitrary(0, randomLenght - 1));
     const callArray = progression(randomNumber, randomLenght, randomStep, hiddenNumber);
-    console.log(`Question: ${callArray}`);
+    console.log(`Question: ${callArray.join(" ")}`);
     const answer = readlineSync.question('What number is missing in the progression?');
     console.log(`Your answer: ${answer}`);
+	console.log(callArray[hiddenNumber + 2]);
+	console.log(randomStep);
     const expectedResult = callArray[hiddenNumber + 2] - randomStep;
     if (answer == expectedResult) {
       console.log('Correct!');
