@@ -35,7 +35,7 @@ const guessRandomNumber = () => {
     console.log(`Question: ${callArray}`);
     const answer = readlineSync.question('What number is missing in the progression?');
     console.log(`Your answer: ${answer}`);
-    const expectedResult = callArray[hiddenNumber + 1] - randomStep;
+    const expectedResult = callArray[hiddenNumber + 2] - randomStep;
     if (answer == expectedResult) {
       console.log('Correct!');
       if (i === 2) {
