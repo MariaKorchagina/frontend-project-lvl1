@@ -1,5 +1,5 @@
 {
-  "name": "@hexlet/code",
+  "name": "@hexlet/frontend-project-lvl1",
   "bin": {
     "brain-games": "bin/brain-games.js",
     "brain-even": "bin/brain-even.js",
