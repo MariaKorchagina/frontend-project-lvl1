@@ -1,5 +1,5 @@
 {
-  "name": "@hexlet/frontend-project-lvl1",
+  "name": "@hexlet/code",
   "bin": {
     "brain-games": "bin/brain-games.js",
     "brain-even": "bin/brain-even.js",
@@ -8,7 +8,17 @@
     "brain-progression": "bin/brain-progression.js",
     "brain-prime": "bin/brain-prime.js"
   },
+   "repository": {
+   "type": "git",
+   "url": "git+https://github.com/MariaKorchagina/frontend-project-lvl1.git"
+  },
+  "author": "MariaKorchagina",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/MariaKorchagina/frontend-project-lvl1/issues"
+  },
   "type": "module",
+  "homepage": "https://github.com/MariaKorchagina/frontend-project-lvl1#readme",
   "dependencies": {
     "readline-sync": "^1.4.10"
   },
