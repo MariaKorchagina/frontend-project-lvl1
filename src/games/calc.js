@@ -27,7 +27,7 @@ const generateAnswerCalc = () => {
       default:
         break;
     }
-    if (answer == expectedResult) {
+    if (answer === String(expectedResult)) {
       console.log('Correct!');
     } else {
       console.log(`${answer} is wrong answer ;(. Correct answer was ${expectedResult}.`);

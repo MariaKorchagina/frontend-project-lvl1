@@ -21,7 +21,7 @@ const getPrimeNumber = () => {
     if (isPrimeNumber) {
       if (answer === 'yes') {
         console.log('Correct!');
-        if (i == 2) {
+        if (i === 2) {
           console.log(`Congratulations, ${name}!`);
         }
       } else {
