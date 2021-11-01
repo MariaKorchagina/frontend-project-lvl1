@@ -1,5 +1,8 @@
-import askName from '../index.js';
+import {
+  askName,
+} from '../index.js';
 
-export default () => {
+const whatIsYourName = () => {
   askName();
 };
+export default whatIsYourName;
