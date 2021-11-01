@@ -7,7 +7,6 @@ export const askName = () => {
   return name;
 };
 
-
 export const askQuestion = (question, askAnswer) => {
   console.log(question);
   const answer = readlineSync.question(askAnswer);
