@@ -1,4 +1,4 @@
-import { startGame } from '../index.js';
+import startGame from '../index.js';
 
 const gcd = (number1, number2) => {
   if (number2 > number1) return gcd(number2, number1);

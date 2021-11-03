@@ -1,4 +1,4 @@
-import { startGame } from '../index.js';
+import startGame from '../index.js';
 
 function getRandomArbitrary(min, max) {
   return Math.random() * (max - min) + min;

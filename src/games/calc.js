@@ -1,4 +1,4 @@
-import { startGame } from '../index.js';
+import startGame from '../index.js';
 
 const calc = (number1, number2, operator) => {
   let result;
