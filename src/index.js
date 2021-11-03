@@ -24,4 +24,3 @@ const startGame = (gameData) => {
 };
 
 export default startGame;
-
