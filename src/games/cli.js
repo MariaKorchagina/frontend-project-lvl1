@@ -1,8 +1,8 @@
-import {
-  askName,
-} from '../index.js';
+import readlineSync from 'readline-sync';
 
-const whatIsYourName = () => {
-  askName();
+const askName = () => {
+  console.log('Welcome to the Brain Games!');
+  const name = readlineSync.question('May I have your name? ');
+  console.log(`Hello, ${name}!`);
 };
-export default whatIsYourName;
+export default askName;

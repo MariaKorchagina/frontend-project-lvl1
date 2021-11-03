@@ -1,5 +1,5 @@
 #!/usr/bin/env node
 
-import generateAnswer from '../src/games/even.js';
+import startGcdGame from '../src/games/even.js';
 
-generateAnswer();
+startGcdGame();
