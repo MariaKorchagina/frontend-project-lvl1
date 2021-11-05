@@ -18,7 +18,7 @@ const generateProgressionData = () => {
   const expectedAnswer = String(callArray[hiddenNumber]);
   callArray[hiddenNumber] = '..';
   const description = `Question: ${callArray.join(' ')}`;
-  const question =` What number is missing in the progression?`
+  const question = 'What number is missing in the progression?';
   return [description, question, expectedAnswer];
 };
 

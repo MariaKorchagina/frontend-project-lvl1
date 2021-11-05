@@ -26,7 +26,7 @@ const generateGameData = () => {
   const randomNumber1 = getRandomNumber(1, 100);
   const randomNumber2 = getRandomNumber(1, 100);
   const description = `Question: ${randomNumber1} ${randomOperator} ${randomNumber2}`;
-  const question = `What is the result of the expression?`;
+  const question = 'What is the result of the expression?';
   const expectedAnswer = String(calc(randomNumber1, randomNumber2, randomOperator));
   return [description, question, expectedAnswer];
 };

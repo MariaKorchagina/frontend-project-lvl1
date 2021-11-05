@@ -10,7 +10,7 @@ const generateBiggestDivisor = () => {
   const randomNumber1 = getRandomNumber(1, 100);
   const randomNumber2 = getRandomNumber(1, 100);
   const description = `Question: ${randomNumber1} ${randomNumber2}`;
-  const question = `Find the greatest common divisor of given numbers.`;
+  const question = 'Find the greatest common divisor of given numbers.';
   const expectedAnswer = String(gcd(randomNumber1, randomNumber2));
   return [description, question, expectedAnswer];
 };

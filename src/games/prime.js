@@ -12,7 +12,7 @@ const isPrime = (number) => {
 const generatePrimeData = () => {
   const randomNumber = getRandomNumber(1, 100);
   const description = `Question: ${randomNumber}`;
-  const question = `Answer "yes" if given number is prime. Otherwise answer "no".`
+  const question = 'Answer "yes" if given number is prime. Otherwise answer "no".';
   const isPrimeNumber = isPrime(randomNumber);
   const expectedAnswer = isPrimeNumber ? 'yes' : 'no';
   return [description, question, expectedAnswer];
