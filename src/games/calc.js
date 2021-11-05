@@ -1,4 +1,5 @@
 import startGame from '../index.js';
+import getRandomNumber from '../utils.js';
 
 const calc = (number1, number2, operator) => {
   let result;
@@ -13,19 +14,21 @@ const calc = (number1, number2, operator) => {
       result = number1 * number2;
       break;
     default:
+      result = null;
       break;
   }
   return result;
 };
 
 const generateGameData = () => {
-  const ops = ['+', '-', '*'];
-  const randomOperator = ops[Math.floor(Math.random() * 3)];
-  const randomNumber1 = Math.floor(Math.random() * 100);
-  const randomNumber2 = Math.floor(Math.random() * 100);
-  const question = `Question: ${randomNumber1} ${randomOperator} ${randomNumber2} \nWhat is the result of the expression?`;
-  const expectedAnswer = calc(randomNumber1, randomNumber2, randomOperator);
-  return [question, expectedAnswer];
+  const signs = ['+', '-', '*'];
+  const randomOperator = signs[getRandomNumber(1, 3)];
+  const randomNumber1 = getRandomNumber(1, 100);
+  const randomNumber2 = getRandomNumber(1, 100);
+  const description = `Question: ${randomNumber1} ${randomOperator} ${randomNumber2}`;
+  const question = `What is the result of the expression?`;
+  const expectedAnswer = String(calc(randomNumber1, randomNumber2, randomOperator));
+  return [description, question, expectedAnswer];
 };
 
 const startCalcGame = () => startGame(generateGameData);
