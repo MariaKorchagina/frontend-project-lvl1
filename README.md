@@ -3,7 +3,7 @@
 
 <a href="https://codeclimate.com/github/MariaKorchagina/frontend-project-lvl1/maintainability"><img src="https://api.codeclimate.com/v1/badges/ec830e87b83c3a3220bf/maintainability" /></a>
 
-[![Actions Status](https://github.com/MariaKorchagina/frontend-project-lvl1/workflows/github-actions-lint/badge.svg)](https://github.com/MariaKorchagina/frontend-project-lvl1/actions)
+[![github-actions-lint](https://github.com/MariaKorchagina/frontend-project-lvl1/actions/workflows/github-actions-lint.yml/badge.svg)](https://github.com/MariaKorchagina/frontend-project-lvl1/actions)
 
 **Brain Games** is a set of five console games. Each game asks questions that need to be answered correctly. After three correct answers the game ends. Wrong answers end the game and ask you to play it again.
 
