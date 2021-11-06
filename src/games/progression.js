@@ -1,6 +1,8 @@
 import startGame from '../index.js';
 import getRandomNumber from '../utils.js';
 
+const description = 'What number is missing in the progression?';
+
 const getProgression = (number, arraySize, step) => {
   const arr = [];
   for (let i = 0; i < arraySize; i += 1) {
@@ -17,11 +19,11 @@ const generateProgressionData = () => {
   const callArray = getProgression(randomNumber, randomLenght, randomStep);
   const expectedAnswer = String(callArray[hiddenNumber]);
   callArray[hiddenNumber] = '..';
-  const description = `Question: ${callArray.join(' ')}`;
-  const question = 'What number is missing in the progression?';
-  return [description, question, expectedAnswer];
+  const question = `Question: ${callArray.join(' ')}`;
+
+  return [question, expectedAnswer];
 };
 
-const startProgressionGame = () => startGame(generateProgressionData);
+const startProgressionGame = () => startGame(description, generateProgressionData);
 
 export default startProgressionGame;
