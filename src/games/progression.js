@@ -11,7 +11,7 @@ const getProgression = (number, arraySize, step) => {
   return arr;
 };
 
-const generateProgressionData = () => {
+const getProgressionGameData = () => {
   const randomNumber = getRandomNumber(1, 10);
   const randomStep = getRandomNumber(1, 10);
   const randomLenght = getRandomNumber(5, 11);
@@ -20,10 +20,9 @@ const generateProgressionData = () => {
   const expectedAnswer = String(callArray[hiddenNumber]);
   callArray[hiddenNumber] = '..';
   const question = `Question: ${callArray.join(' ')}`;
-
   return [question, expectedAnswer];
 };
 
-const startProgressionGame = () => startGame(description, generateProgressionData);
+const startProgressionGame = () => startGame(description, getProgressionGameData);
 
 export default startProgressionGame;

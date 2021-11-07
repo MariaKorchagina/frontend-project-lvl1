@@ -8,9 +8,9 @@
     "brain-progression": "bin/brain-progression.js",
     "brain-prime": "bin/brain-prime.js"
   },
-   "repository": {
-   "type": "git",
-   "url": "git+https://github.com/MariaKorchagina/frontend-project-lvl1.git"
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/MariaKorchagina/frontend-project-lvl1.git"
   },
   "author": "MariaKorchagina",
   "license": "ISC",
